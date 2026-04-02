@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Maduvwe - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Background Canvas -->
+    <canvas id="particles-canvas" aria-label="Starry background particles" role="presentation"></canvas>
+    
+    <!-- Mobile Menu Backdrop -->
+    <div class="nav-backdrop" id="nav-backdrop"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-name">Emmanuel</span> Maduvwe
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding">
+            <div class="container hero-container">
+                <div class="hero-content reveal-left">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Emmanuel<br>Maduvwe</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span class="typing-text" id="typed-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        I create elegant and efficient software solutions that make a difference. Specializing in
+                        full-stack development, I bring ideas to life with code. I build interfaces that are not only
+                        functional but also delightful to use.
+                    </p>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                </div>
+
+                <div class="hero-image reveal-right">
+                    <div class="image-wrapper">
+                        <img src="me2.png" alt="Emmanuel Maduvwe" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll</span>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container text-center">
+                <h2 class="section-title reveal-fade">About Me</h2>
+            </div>
+
+            <div class="container about-container">
+                <div class="about-text reveal-left">
+                    <h3 class="about-subtitle">Devoted Software Engineer and Web Developer.</h3>
+                    <p>I'm a full-time Software Developer and Web Developer with a strong focus on building scalable,
+                        responsive, and impactful digital experiences. I specialize in front-end and full-stack
+                        development using modern technologies and frameworks. My work is guided by a passion for clean
+                        design, efficient code, and user-centered functionality.</p>
+                    <p>I hold a degree in applied Computer Science, but it's been the real-world projects and continuous
+                        learning that have truly shaped my journey. I'm passionate about solving problems and always
+                        pushing to build software that makes a real impact.</p>
+
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="#" class="btn btn-outline">Download Resume</a>
+                    </div>
+                </div>
+
+                <div class="about-cards reveal-right">
+                    <div class="card service-card">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <div class="card-content">
+                            <h4>Web Development</h4>
+                            <p>Creating responsive, dynamic websites and web applications, with the use of modern
+                                frameworks.</p>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-icon"><i class="far fa-user"></i></div>
+                        <div class="card-content">
+                            <h4>Software Engineering</h4>
+                            <p>Designing and implementing software solutions, focusing on scalability and performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-icon"><i class="fas fa-suitcase"></i></div>
+                        <div class="card-content">
+                            <h4>Project Management</h4>
+                            <p>Leading tasks from inception to completion, applying Agile methodologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container text-center">
+                <h2 class="section-title reveal-fade">My Projects</h2>
+                <p class="section-subtitle reveal-fade" style="margin-bottom: 40px; color: var(--text-secondary);">Here
+                    are some of the recent projects I've worked on.</p>
+            </div>
+            <div class="container">
+                <div class="projects-grid reveal-up">
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-laptop-code" style="font-size: 3rem;"></i></div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack e-commerce solution with cart, authentication, and secure checkout features.
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span><span>PHP</span><span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-chart-line" style="font-size: 3rem;"></i></div>
+                        <div class="project-info">
+                            <h3>Data Analytics Dashboard</h3>
+                            <p>Visualize complex data flows elegantly with dark-mode enabled interactive charts.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>JavaScript</span><span>D3.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-mobile-alt" style="font-size: 3rem;"></i></div>
+                        <div class="project-info">
+                            <h3>Fitness Tracker App</h3>
+                            <p>Mobile application to manage daily workouts, nutrition intake, and goal tracking.</p>
+                            <div class="project-tags">
+                                <span>React Native</span><span>Java</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container text-center">
+                <h2 class="section-title reveal-fade">My Skills</h2>
+
+                <div class="filter-chips reveal-fade" id="skills-filter">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="frontend">Frontend</button>
+                    <button class="chip" data-filter="backend">Backend</button>
+                    <button class="chip" data-filter="mobile">Mobile</button>
+                    <button class="chip" data-filter="tools">Tools</button>
+                    <button class="chip" data-filter="methodologies">Methodologies</button>
+                </div>
+            </div>
+
+            <div class="container skills-grid reveal-up" id="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card frontend">
+                    <div class="skill-info"><span class="skill-name">HTML/CSS</span><span
+                            class="skill-percentage">95%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card frontend">
+                    <div class="skill-info"><span class="skill-name">JavaScript</span><span
+                            class="skill-percentage">90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-card backend">
+                    <div class="skill-info"><span class="skill-name">Java</span><span
+                            class="skill-percentage">85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card backend">
+                    <div class="skill-info"><span class="skill-name">PHP</span><span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card backend">
+                    <div class="skill-info"><span class="skill-name">Python</span><span
+                            class="skill-percentage">85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card backend">
+                    <div class="skill-info"><span class="skill-name">C++</span><span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card backend">
+                    <div class="skill-info"><span class="skill-name">C</span><span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+                <!-- Mobile -->
+                <div class="skill-card mobile">
+                    <div class="skill-info"><span class="skill-name">React Native</span><span
+                            class="skill-percentage">75%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-card tools">
+                    <div class="skill-info"><span class="skill-name">Git/GitHub</span><span
+                            class="skill-percentage">90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                <!-- Methodologies -->
+                <div class="skill-card methodologies">
+                    <div class="skill-info"><span class="skill-name">Agile/Scrum</span><span
+                            class="skill-percentage">85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container text-center">
+                <h2 class="section-title reveal-fade">Get In <span class="highlight">Touch</span></h2>
+                <p class="contact-subtitle reveal-fade" style="margin-bottom: 40px; color: var(--text-secondary);">Have
+                    a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new
+                    opportunities.</p>
+            </div>
+
+            <div class="container contact-container">
+                <div class="contact-info reveal-left">
+                    <h3 class="info-title">Contact Information</h3>
+
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="far fa-envelope"></i></div>
+                        <div class="info-text">maduvwe88@gmail.com</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-text">+254 714 772 901</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">Chuka, Tharaka Nithi County, Kenya</div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form">
+                        <h3 class="form-title text-center">Send a message</h3>
+
+                        <div class="form-group">
+                            <label for="name">Your name:</label>
+                            <input type="text" id="name" placeholder="Name..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" placeholder="Email..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your message:</label>
+                            <textarea id="message" rows="5" placeholder="Hello, I'd like to talk about..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
