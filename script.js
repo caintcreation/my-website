@@ -2,7 +2,7 @@
  * Typing Effect
  */
 const typedTextElement = document.getElementById('typed-text');
-const titles = ['Web Developer', 'Software Engineer', 'Web Development'];
+const titles = ['Web Developer', 'Full Stack Web Developer'];
 let titleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -339,5 +339,75 @@ function animateProgressBars() {
         if (fill.style.width === '0px' || fill.style.width === '0%') {
             fill.style.width = fill.dataset.width;
         }
+    });
+}
+
+/**
+ * Form Submission Handling (AJAX)
+ */
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = contactForm.querySelector('.submit-btn') || contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+        submitBtn.style.cursor = 'not-allowed';
+        
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData.entries());
+        
+        let actionUrl = contactForm.action;
+        if (!actionUrl.includes('/ajax/')) {
+            actionUrl = actionUrl.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+        }
+
+        // Use Fetch to Send JSON to FormSubmit AJAX endpoint
+        fetch(actionUrl, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new Error('Network response was not ok. Status: ' + response.status);
+        })
+        .then(data => {
+            // Replace form content with success message
+            const successHtml = `
+                <div class="success-message" style="text-align: center; padding: 2rem 0; animation: fade-in 0.5s ease-in;">
+                    <i class="fas fa-check-circle" style="font-size: 4rem; color: #10b981; margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Message Sent Successfully!</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Thank you for reaching out. I have received your message and will get back to you shortly.</p>
+                    <button onclick="location.reload()" class="btn btn-outline" style="margin-top: 1rem;">Send Another Message</button>
+                    <style>
+                        @keyframes fade-in {
+                            from { opacity: 0; transform: translateY(10px); }
+                            to { opacity: 1; transform: translateY(0); }
+                        }
+                    </style>
+                </div>
+            `;
+            
+            // Replaces the form elements but keeps the container
+            contactForm.innerHTML = successHtml;
+        })
+        .catch(error => {
+            console.error('Error submitting form:', error);
+            submitBtn.textContent = 'Failed to send. Try again';
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+            submitBtn.style.cursor = 'pointer';
+            
+            alert('There was a problem sending your message. Please try again or use my email directly.');
+        });
     });
 }
