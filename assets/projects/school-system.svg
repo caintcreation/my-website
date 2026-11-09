@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="900" height="550">
+  <defs>
+    <linearGradient id="sms-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="550" fill="url(#sms-bg)" rx="16"/>
+  <!-- Window Header -->
+  <rect width="900" height="46" fill="#312e81" rx="16 16 0 0"/>
+  <text x="32" y="29" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="700">School Management System &#8226; Java / Maven Enterprise Desktop Architecture</text>
+
+  <!-- Left Navigation Menu -->
+  <rect x="0" y="46" width="200" height="504" fill="#111827"/>
+  <text x="24" y="80" fill="#818cf8" font-family="sans-serif" font-size="11" font-weight="700">MODULES</text>
+  <rect x="16" y="95" width="168" height="32" rx="6" fill="#4338ca"/>
+  <text x="30" y="116" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">👨‍🎓 Student Registry</text>
+  <text x="30" y="152" fill="#94a3b8" font-family="sans-serif" font-size="12">👩‍🏫 Faculty &amp; Instructors</text>
+  <text x="30" y="187" fill="#94a3b8" font-family="sans-serif" font-size="12">📚 Course Catalog</text>
+  <text x="30" y="222" fill="#94a3b8" font-family="sans-serif" font-size="12">🗓️ Timetable Scheduler</text>
+  <text x="30" y="257" fill="#94a3b8" font-family="sans-serif" font-size="12">📝 Attendance Tracker</text>
+  <text x="30" y="292" fill="#94a3b8" font-family="sans-serif" font-size="12">📊 Exam &amp; Grade Reports</text>
+
+  <!-- Content Table -->
+  <rect x="220" y="70" width="650" height="440" rx="10" fill="#1e1b4b" stroke="#3730a3" stroke-width="1"/>
+  <text x="245" y="105" fill="#f8fafc" font-family="sans-serif" font-size="16" font-weight="700">Active Students Database</text>
+  <rect x="740" y="85" width="110" height="28" rx="6" fill="#6366f1"/>
+  <text x="752" y="103" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700">+ NEW RECORD</text>
+
+  <!-- Table Header -->
+  <rect x="245" y="125" width="600" height="34" rx="4" fill="#312e81"/>
+  <text x="260" y="147" fill="#c7d2fe" font-family="sans-serif" font-size="11" font-weight="700">STUDENT ID</text>
+  <text x="380" y="147" fill="#c7d2fe" font-family="sans-serif" font-size="11" font-weight="700">FULL NAME</text>
+  <text x="540" y="147" fill="#c7d2fe" font-family="sans-serif" font-size="11" font-weight="700">ENROLLED COURSE</text>
+  <text x="730" y="147" fill="#c7d2fe" font-family="sans-serif" font-size="11" font-weight="700">STATUS</text>
+
+  <!-- Row 1 -->
+  <rect x="245" y="165" width="600" height="44" fill="#1e1b4b"/>
+  <text x="260" y="192" fill="#ffffff" font-family="monospace" font-size="12">STD-2025-081</text>
+  <text x="380" y="192" fill="#f8fafc" font-family="sans-serif" font-size="12">Brenda Muthoni</text>
+  <text x="540" y="192" fill="#cbd5e1" font-family="sans-serif" font-size="12">BSc Computer Science</text>
+  <text x="730" y="192" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700">Active</text>
+
+  <!-- Row 2 -->
+  <rect x="245" y="215" width="600" height="44" fill="#25225c"/>
+  <text x="260" y="242" fill="#ffffff" font-family="monospace" font-size="12">STD-2025-082</text>
+  <text x="380" y="242" fill="#f8fafc" font-family="sans-serif" font-size="12">David Otieno</text>
+  <text x="540" y="242" fill="#cbd5e1" font-family="sans-serif" font-size="12">BSc Information Tech</text>
+  <text x="730" y="242" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700">Active</text>
+
+  <!-- Row 3 -->
+  <rect x="245" y="265" width="600" height="44" fill="#1e1b4b"/>
+  <text x="260" y="292" fill="#ffffff" font-family="monospace" font-size="12">STD-2025-083</text>
+  <text x="380" y="292" fill="#f8fafc" font-family="sans-serif" font-size="12">Faith Chebet</text>
+  <text x="540" y="292" fill="#cbd5e1" font-family="sans-serif" font-size="12">BSc Software Engineering</text>
+  <text x="730" y="292" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="700">Active</text>
+
+  <rect x="245" y="340" width="600" height="140" rx="8" fill="#16133a"/>
+  <text x="265" y="370" fill="#a5b4fc" font-family="sans-serif" font-size="13" font-weight="600">Architecture Highlights:</text>
+  <text x="265" y="395" fill="#94a3b8" font-family="sans-serif" font-size="12">&#8226; Object-Oriented Domain Layer with strict polymorphism and encapsulation</text>
+  <text x="265" y="420" fill="#94a3b8" font-family="sans-serif" font-size="12">&#8226; Maven lifecycle management &amp; JDBC transactional integrity</text>
+  <text x="265" y="445" fill="#94a3b8" font-family="sans-serif" font-size="12">&#8226; Built in IntelliJ IDEA with modular reporting engines</text>
+</svg>

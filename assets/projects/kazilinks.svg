@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="900" height="550">
+  <defs>
+    <linearGradient id="kl-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="550" fill="url(#kl-bg)" rx="16"/>
+  <!-- Top Navigation -->
+  <rect width="900" height="52" fill="#111827" rx="16 16 0 0"/>
+  <text x="32" y="32" fill="#10b981" font-family="sans-serif" font-size="18" font-weight="800">KAZILINK</text>
+  <text x="130" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12">Kenyan Task &amp; Gig Platform with M-Pesa Disbursal</text>
+  <rect x="740" y="12" width="130" height="28" rx="6" fill="#10b981"/>
+  <text x="755" y="30" fill="#022c22" font-family="sans-serif" font-size="12" font-weight="800">KES 14,280.00</text>
+
+  <!-- Left Column: Available Tasks -->
+  <rect x="30" y="75" width="540" height="445" rx="12" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+  <text x="50" y="105" fill="#f9fafb" font-family="sans-serif" font-size="15" font-weight="700">Available Micro-Tasks &amp; Earning Milestones</text>
+  
+  <!-- Task 1 -->
+  <rect x="50" y="125" width="500" height="75" rx="8" fill="#1f2937"/>
+  <text x="70" y="152" fill="#f9fafb" font-family="sans-serif" font-size="13" font-weight="600">Product Quality Survey &amp; Audio Transcription</text>
+  <text x="70" y="175" fill="#9ca3af" font-family="sans-serif" font-size="11">Level 2 Certified &#8226; Estimated duration: 8 mins</text>
+  <rect x="440" y="142" width="90" height="32" rx="6" fill="#059669"/>
+  <text x="455" y="162" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="700">+ KES 250</text>
+
+  <!-- Task 2 -->
+  <rect x="50" y="215" width="500" height="75" rx="8" fill="#1f2937"/>
+  <text x="70" y="242" fill="#f9fafb" font-family="sans-serif" font-size="13" font-weight="600">E-Commerce Category Validation &amp; OCR Verification</text>
+  <text x="70" y="265" fill="#9ca3af" font-family="sans-serif" font-size="11">Level 1 Open &#8226; Estimated duration: 5 mins</text>
+  <rect x="440" y="232" width="90" height="32" rx="6" fill="#059669"/>
+  <text x="455" y="252" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="700">+ KES 180</text>
+
+  <!-- Task 3 -->
+  <rect x="50" y="305" width="500" height="75" rx="8" fill="#1f2937"/>
+  <text x="70" y="332" fill="#f9fafb" font-family="sans-serif" font-size="13" font-weight="600">Local Merchant Data Pinpoint &amp; Verification</text>
+  <text x="70" y="355" fill="#9ca3af" font-family="sans-serif" font-size="11">Field / Web &#8226; Estimated duration: 15 mins</text>
+  <rect x="440" y="322" width="90" height="32" rx="6" fill="#059669"/>
+  <text x="455" y="342" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="700">+ KES 450</text>
+
+  <text x="50" y="490" fill="#6b7280" font-family="sans-serif" font-size="11">Built on PHP, MySQL, PayHero M-Pesa Gateway, and secure transactional ledgers.</text>
+
+  <!-- Right Column: M-Pesa STK Cashout Modal -->
+  <rect x="590" y="75" width="280" height="445" rx="12" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <rect x="610" y="95" width="240" height="45" rx="8" fill="#022c22"/>
+  <text x="635" y="122" fill="#34d399" font-family="sans-serif" font-size="13" font-weight="700">M-PESA INSTANT CASHOUT</text>
+
+  <text x="610" y="165" fill="#a7f3d0" font-family="sans-serif" font-size="12">Account Phone Number:</text>
+  <rect x="610" y="175" width="240" height="35" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="625" y="198" fill="#f9fafb" font-family="sans-serif" font-size="13">0714 772 901</text>
+
+  <text x="610" y="235" fill="#a7f3d0" font-family="sans-serif" font-size="12">Withdrawal Amount:</text>
+  <rect x="610" y="245" width="240" height="35" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="625" y="268" fill="#f9fafb" font-family="sans-serif" font-size="13">KES 2,500.00</text>
+
+  <rect x="610" y="300" width="240" height="75" rx="8" fill="#022c22"/>
+  <text x="625" y="325" fill="#6ee7b7" font-family="sans-serif" font-size="11">Gateway: PayHero Kenya</text>
+  <text x="625" y="345" fill="#6ee7b7" font-family="sans-serif" font-size="11">Disbursement Fee: KES 0.00</text>
+  <text x="625" y="365" fill="#6ee7b7" font-family="sans-serif" font-size="11">ETA: Instant STK / B2C</text>
+
+  <rect x="610" y="395" width="240" height="42" rx="8" fill="#10b981"/>
+  <text x="655" y="421" fill="#022c22" font-family="sans-serif" font-size="13" font-weight="800">EXECUTE CASHOUT ➔</text>
+</svg>

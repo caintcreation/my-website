@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="900" height="550">
+  <defs>
+    <linearGradient id="cf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="100%" stop-color="#1c1917" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="550" fill="url(#cf-bg)" rx="16"/>
+  <rect width="900" height="50" fill="#78350f" rx="16 16 0 0"/>
+  <text x="32" y="32" fill="#fef3c7" font-family="sans-serif" font-size="16" font-weight="700">☕ Aroma Roast &#8226; Artisan Coffee Shop &amp; Restaurant Web Experience</text>
+
+  <!-- Left: Showcase -->
+  <rect x="50" y="80" width="460" height="420" rx="12" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <text x="75" y="120" fill="#fef3c7" font-family="serif" font-size="24" font-weight="700">Crafted with Passion, Poured to Perfection</text>
+  <text x="75" y="150" fill="#d6d3d1" font-family="sans-serif" font-size="13">Responsive cafe website featuring dynamic menu sliders, customer feedback carousels,</text>
+  <text x="75" y="170" fill="#d6d3d1" font-family="sans-serif" font-size="13">and table reservation contact flows.</text>
+
+  <!-- Menu Preview Items -->
+  <rect x="75" y="200" width="195" height="130" rx="8" fill="#1c1917"/>
+  <text x="90" y="235" fill="#fef3c7" font-family="sans-serif" font-size="14" font-weight="600">Espresso Macchiato</text>
+  <text x="90" y="260" fill="#a8a29e" font-family="sans-serif" font-size="11">Rich dark roast shot</text>
+  <text x="90" y="305" fill="#f59e0b" font-family="sans-serif" font-size="15" font-weight="700">KES 280</text>
+
+  <rect x="290" y="200" width="195" height="130" rx="8" fill="#1c1917"/>
+  <text x="305" y="235" fill="#fef3c7" font-family="sans-serif" font-size="14" font-weight="600">Caramel Frappuccino</text>
+  <text x="305" y="260" fill="#a8a29e" font-family="sans-serif" font-size="11">Blended iced brew &amp; cream</text>
+  <text x="305" y="305" fill="#f59e0b" font-family="sans-serif" font-size="15" font-weight="700">KES 350</text>
+
+  <rect x="75" y="360" width="410" height="110" rx="8" fill="#1c1917"/>
+  <text x="95" y="390" fill="#fde68a" font-family="sans-serif" font-size="12" font-weight="700">CUSTOMER TESTIMONIAL SLIDER</text>
+  <text x="95" y="415" fill="#e7e5e4" font-family="sans-serif" font-size="12">"The ambiance and roast quality are unmatched. Best coffee workspace!"</text>
+  <text x="95" y="445" fill="#a8a29e" font-family="sans-serif" font-size="11">&#8226; Powered by Swiper.js &#8226; Fully Mobile Responsive Grid</text>
+
+  <!-- Right: Tech details -->
+  <rect x="540" y="80" width="310" height="420" rx="12" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <text x="565" y="120" fill="#fef3c7" font-family="sans-serif" font-size="15" font-weight="700">Interactive Highlights</text>
+  <text x="565" y="160" fill="#d6d3d1" font-family="sans-serif" font-size="12">&#8226; Fixed navigation with mobile drawer</text>
+  <text x="565" y="195" fill="#d6d3d1" font-family="sans-serif" font-size="12">&#8226; Touch-enabled Swiper carousels</text>
+  <text x="565" y="230" fill="#d6d3d1" font-family="sans-serif" font-size="12">&#8226; High-resolution image gallery</text>
+  <text x="565" y="265" fill="#d6d3d1" font-family="sans-serif" font-size="12">&#8226; Reservation inquiry forms</text>
+  <text x="565" y="300" fill="#d6d3d1" font-family="sans-serif" font-size="12">&#8226; Clean semantic HTML5 / CSS3 / JS</text>
+</svg>

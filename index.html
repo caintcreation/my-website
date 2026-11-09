@@ -1,372 +1,876 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Maduvwe - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caint Creation | Professional Full-Stack Developer &amp; Digital Solutions</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Caint Creation | Professional Full-Stack Developer &amp; Digital Solutions">
+  <meta name="description" content="Official developer portfolio of Emmanuel Maduvwe (Caint Creation) - Full-Stack Software Engineer &amp; Computer Science graduate from Chuka University. Engineering high-converting websites, Laravel web applications, payment integrations, and n8n workflow automations.">
+  <meta name="keywords" content="Caint Creation, Emmanuel Maduvwe, Web Developer Kenya, Full-Stack Developer Nairobi, PHP Laravel Developer, Freelance Web Developer, M-Pesa Integration Developer, Website Design Chuka, n8n Workflow Automation">
+  <meta name="author" content="Emmanuel Maduvwe - Caint Creation">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://caintcreation.dev/">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caintcreation.dev/">
+  <meta property="og:title" content="Caint Creation | Full-Stack Web Developer &amp; Digital Solutions">
+  <meta property="og:description" content="Engineering high-converting business websites, Laravel web applications, payment integrations, and intelligent workflow automations.">
+  <meta property="og:image" content="https://caintcreation.dev/LOGO.png">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Twitter / X -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://caintcreation.dev/">
+  <meta property="twitter:title" content="Caint Creation | Full-Stack Web Developer">
+  <meta property="twitter:description" content="Turning ideas into powerful digital experiences. Explore production web apps, e-commerce platforms, and workflow automations.">
+  <meta property="twitter:image" content="https://caintcreation.dev/LOGO.png">
+
+  <!-- Favicon using official Logo -->
+  <link rel="icon" type="image/png" href="LOGO.png">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet with Official Brand Colors -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Emmanuel Maduvwe",
+    "alternateName": "Caint Creation",
+    "url": "https://caintcreation.dev/",
+    "image": "https://caintcreation.dev/LOGO.png",
+    "jobTitle": "Full-Stack Web Developer & Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Caint Creation"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Chuka University"
+    },
+    "knowsAbout": ["Web Development", "PHP", "Laravel", "MySQL", "JavaScript", "HTML5", "CSS3", "Python", "Java", "Workflow Automation", "n8n", "M-Pesa API Integration"],
+    "sameAs": [
+      "https://github.com/caintcreation",
+      "https://t.me/Caintmanu11",
+      "https://www.instagram.com/c_aintcreation"
+    ]
+  }
+  </script>
 </head>
 
 <body class="dark-mode">
-    <!-- Background Canvas -->
-    <canvas id="particles-canvas" aria-label="Starry background particles" role="presentation"></canvas>
 
-    <!-- Mobile Menu Backdrop -->
-    <div class="nav-backdrop" id="nav-backdrop"></div>
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <span class="logo-name">Emmanuel</span> Maduvwe
+  <!-- Mobile Backdrop Overlay -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- Main Header & Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="container nav-container">
+        <!-- Official Brand Logo -->
+        <a href="index.html" class="logo" aria-label="Caint Creation Homepage">
+          <img src="LOGO.png" alt="Caint Creation Official Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop & Mobile Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="cv.html" class="nav-link">Curriculum Vitae</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="mobile-only" style="margin-top: 10px; width: 100%;">
+            <a href="Emmanuel_Maduvwe_Professional_CV.pdf" download="Emmanuel_Maduvwe_Professional_CV.pdf" class="btn btn-secondary btn-sm" style="width: 100%; margin-bottom: 8px;">
+              <i class="fas fa-file-pdf"></i> Download CV (PDF)
             </a>
+            <a href="contact.html" class="btn btn-primary btn-sm" style="width: 100%;">Let's Talk</a>
+          </li>
+        </ul>
 
-            <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li>
-                    <button class="theme-toggle" id="theme-toggle">
-                        <i class="fas fa-sun"></i>
-                    </button>
-                </li>
-            </ul>
+        <!-- Action Items (Theme Toggle, Download CV, CTA) -->
+        <div class="nav-actions">
+          <a href="Emmanuel_Maduvwe_Professional_CV.pdf" download="Emmanuel_Maduvwe_Professional_CV.pdf" class="btn btn-sm btn-outline desktop-only" title="Download Official CV PDF">
+            <i class="fas fa-file-pdf highlight"></i> CV
+          </a>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+          </button>
+          <a href="contact.html" class="btn btn-primary btn-sm desktop-only">Let's Talk</a>
+          <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
+      </div>
     </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero section-padding">
-            <div class="container hero-container">
-                <div class="hero-content reveal-left">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="highlight">Emmanuel<br>Maduvwe</span>
-                    </h1>
-                    <h2 class="hero-subtitle">
-                        I am a <span class="typing-text" id="typed-text"></span><span class="cursor">|</span>
-                    </h2>
-                    <p class="hero-description">
-                        I create elegant and efficient digital solutions that make a real impact. As a full-stack
-                        developer, I transform ideas into powerful, user-friendly experiences—building interfaces that
-                        are not just functional, but genuinely enjoyable to use.
-                    </p>
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                </div>
+  <main>
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
+    <section id="hero" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Freelance &amp; Contract Worldwide</span>
+          </div>
 
-                <div class="hero-image reveal-right">
-                    <div class="image-wrapper">
-                        <img src="me2.png" alt="Emmanuel Maduvwe" />
-                    </div>
-                </div>
+          <h1 class="hero-title">
+            Building Digital Experiences That <span class="text-gradient">Move Businesses Forward.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Web Developer &bull; Full-Stack Engineer &bull; Digital Creative
+          </p>
+
+          <p class="hero-description">
+            I'm <strong>Emmanuel Maduvwe</strong>, founder of <strong>Caint Creation</strong>. I design and engineer modern web applications, high-converting business websites, and intelligent workflow automations that help entrepreneurs and organizations scale their online presence.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#featured-projects" class="btn btn-primary btn-lg">
+              <i class="fas fa-laptop-code"></i> Explore Work
+            </a>
+            <a href="Emmanuel_Maduvwe_Professional_CV.pdf" download="Emmanuel_Maduvwe_Professional_CV.pdf" class="btn btn-secondary btn-lg" title="Download Official CV">
+              <i class="fas fa-file-download highlight"></i> Download CV
+            </a>
+            <a href="contact.html" class="btn btn-outline btn-lg">
+              <i class="fas fa-paper-plane"></i> Get in Touch
+            </a>
+          </div>
+
+          <!-- Credibility Trust Bar -->
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>BSc Computer Science (Chuka Univ. 2025)</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-code-branch"></i>
+              <span>12+ Production &amp; Open-Source Projects</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-globe-africa"></i>
+              <span>Kenya &amp; Remote International</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Visual -->
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="me2.png" alt="Emmanuel Maduvwe - Founder of Caint Creation" class="portrait-img">
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge floating-badge-top">
+            <div class="floating-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="floating-text">
+              <strong>Full-Stack Architecture</strong>
+              <span>PHP, Laravel &amp; MySQL</span>
+            </div>
+          </div>
+
+          <div class="floating-badge floating-badge-bottom">
+            <div class="floating-icon"><i class="fas fa-bolt"></i></div>
+            <div class="floating-text">
+              <strong>Workflow Automation</strong>
+              <span>n8n &amp; REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SELECTED PROJECTS SECTION
+         ==================================================================== -->
+    <section id="featured-projects" class="projects section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Proven Software Work</span>
+          <h2 class="section-title">Selected Projects Showcase</h2>
+          <p class="section-subtitle">
+            Real-world applications, client portals, and automation systems audited directly from verified codebases. Click any project to open the interactive live preview.
+          </p>
+        </div>
+
+        <!-- Rendered dynamically by script.js from projects-data.js -->
+        <div class="projects-grid" id="featured-projects-grid">
+          <!-- Populated by script.js -->
+        </div>
+
+        <div class="text-center" style="margin-top: 48px;">
+          <a href="projects.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-th"></i> View All 12+ Projects in Hub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SERVICES SECTION
+         ==================================================================== -->
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Client Capabilities</span>
+          <h2 class="section-title">Solutions Built for Commercial Impact</h2>
+          <p class="section-subtitle">
+            Reliable, secure, and modern digital development services tailored for individuals, growing businesses, and international startups.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon-box"><i class="fas fa-desktop"></i></div>
+            <h3>Website Development</h3>
+            <p>Bespoke corporate websites, high-converting landing pages, and institutional web portals engineered with speed, accessibility, and clean aesthetics.</p>
+            <ul class="service-deliverables">
+              <li><i class="fas fa-check highlight"></i> Responsive cross-device layouts (Mobile, Tablet, Desktop)</li>
+              <li><i class="fas fa-check highlight"></i> Core Web Vitals speed optimization</li>
+              <li><i class="fas fa-check highlight"></i> On-page Technical SEO &amp; Schema markup</li>
+              <li><i class="fas fa-check highlight"></i> Clean, maintainable semantic architecture</li>
+            </ul>
+            <a href="contact.html?service=website" class="btn btn-sm btn-outline">Inquire Service ➔</a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon-box"><i class="fas fa-layer-group"></i></div>
+            <h3>Web Application Engineering</h3>
+            <p>Database-driven web applications, multi-tenant platforms, administrative dashboards, and customer booking portals tailored to specific business workflows.</p>
+            <ul class="service-deliverables">
+              <li><i class="fas fa-check highlight"></i> Role-based authentication &amp; permissions</li>
+              <li><i class="fas fa-check highlight"></i> Relational MySQL / PostgreSQL database architecture</li>
+              <li><i class="fas fa-check highlight"></i> Secure CRUD operations &amp; audit logging</li>
+              <li><i class="fas fa-check highlight"></i> Real-time dashboards &amp; status trackers</li>
+            </ul>
+            <a href="contact.html?service=webapp" class="btn btn-sm btn-outline">Inquire Service ➔</a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon-box"><i class="fas fa-wallet"></i></div>
+            <h3>Payment &amp; API Integrations</h3>
+            <p>Seamless integrations connecting online storefronts and web apps to automated Kenyan M-Pesa STK push gateways (PayHero, Daraja) and REST APIs.</p>
+            <ul class="service-deliverables">
+              <li><i class="fas fa-check highlight"></i> Automated M-Pesa STK Push payment prompts</li>
+              <li><i class="fas fa-check highlight"></i> Instant B2C automated withdrawal pipelines</li>
+              <li><i class="fas fa-check highlight"></i> Secure webhook verification &amp; idempotency</li>
+              <li><i class="fas fa-check highlight"></i> Transaction receipts &amp; automated ledger logs</li>
+            </ul>
+            <a href="contact.html?service=payments" class="btn btn-sm btn-outline">Inquire Service ➔</a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon-box"><i class="fas fa-sync-alt"></i></div>
+            <h3>Website Redesign &amp; Optimization</h3>
+            <p>Transforming slow, clunky, or outdated legacy websites into modern, sleek, lightning-fast digital assets that convert visitors into paying clients.</p>
+            <ul class="service-deliverables">
+              <li><i class="fas fa-check highlight"></i> Full UI/UX modern redesign &amp; aesthetic uplift</li>
+              <li><i class="fas fa-check highlight"></i> Elimination of render-blocking bloat</li>
+              <li><i class="fas fa-check highlight"></i> Seamless mobile UX restructuring</li>
+              <li><i class="fas fa-check highlight"></i> Conversion rate optimization (CRO) improvements</li>
+            </ul>
+            <a href="contact.html?service=redesign" class="btn btn-sm btn-outline">Inquire Service ➔</a>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon-box"><i class="fas fa-robot"></i></div>
+            <h3>Workflow &amp; Process Automation</h3>
+            <p>Automate repetitive business processes using self-hosted n8n workflows, custom webhook pipelines, and external API connectors to eliminate manual busywork.</p>
+            <ul class="service-deliverables">
+              <li><i class="fas fa-check highlight"></i> Scheduled cron data synchronization pipelines</li>
+              <li><i class="fas fa-check highlight"></i> Automated lead notifications via WhatsApp / Telegram</li>
+              <li><i class="fas fa-check highlight"></i> JSON payload parsing &amp; spreadsheet normalization</li>
+              <li><i class="fas fa-check highlight"></i> Self-healing error notification triggers</li>
+            </ul>
+            <a href="contact.html?service=automation" class="btn btn-sm btn-outline">Inquire Service ➔</a>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon-box"><i class="fas fa-paint-brush"></i></div>
+            <h3>Digital Branding &amp; Creative UI</h3>
+            <p>Cohesive visual identity systems, brand wordmarks, marketing digital graphics, and UI design assets that make your business stand out professionally.</p>
+            <ul class="service-deliverables">
+              <li><i class="fas fa-check highlight"></i> Logo wordmarks &amp; brand guidelines</li>
+              <li><i class="fas fa-check highlight"></i> Digital promotional flyers &amp; social banners</li>
+              <li><i class="fas fa-check highlight"></i> Consistent typography &amp; UI component libraries</li>
+              <li><i class="fas fa-check highlight"></i> High-resolution vector assets</li>
+            </ul>
+            <a href="contact.html?service=branding" class="btn btn-sm btn-outline">Inquire Service ➔</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VERIFIED TECHNICAL SKILLS SECTION
+         ==================================================================== -->
+    <section id="skills" class="skills section-padding" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Verified Capabilities</span>
+          <h2 class="section-title">Technical Skills &amp; Stack</h2>
+          <p class="section-subtitle">
+            Technologies and tools demonstrated by actual production and open-source code repositories.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Category 1: Frontend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+              <div>
+                <h3>Frontend Development</h3>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Modern, responsive, accessible interfaces</p>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-item-badge"><i class="fab fa-html5"></i> HTML5 (Semantic)</span>
+              <span class="skill-item-badge"><i class="fab fa-css3-alt"></i> CSS3 &amp; Flexbox/Grid</span>
+              <span class="skill-item-badge"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
+              <span class="skill-item-badge"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+              <span class="skill-item-badge"><i class="fas fa-wind"></i> Tailwind CSS</span>
+              <span class="skill-item-badge"><i class="fas fa-universal-access"></i> WCAG Accessibility</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Database -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+              <div>
+                <h3>Backend &amp; Databases</h3>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Server-side architecture &amp; persistence</p>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-item-badge"><i class="fab fa-php"></i> PHP (Vanilla &amp; OOP)</span>
+              <span class="skill-item-badge"><i class="fab fa-laravel"></i> Laravel Framework</span>
+              <span class="skill-item-badge"><i class="fas fa-database"></i> MySQL Database Design</span>
+              <span class="skill-item-badge"><i class="fas fa-table"></i> SQLite</span>
+              <span class="skill-item-badge"><i class="fas fa-network-wired"></i> RESTful API Design</span>
+              <span class="skill-item-badge"><i class="fas fa-wallet"></i> PayHero M-Pesa API</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-terminal"></i></div>
+              <div>
+                <h3>Core Programming</h3>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Computer science algorithmic foundations</p>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-item-badge"><i class="fab fa-java"></i> Java (OOP &amp; Maven)</span>
+              <span class="skill-item-badge"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-item-badge"><i class="fas fa-file-code"></i> C &amp; C++</span>
+              <span class="skill-item-badge"><i class="fab fa-js-square"></i> JavaScript</span>
+              <span class="skill-item-badge"><i class="fas fa-cube"></i> OpenGL &amp; Computer Graphics</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Automation & Tools -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+              <div>
+                <h3>Automation &amp; DevOps</h3>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Efficiency, pipelines &amp; version control</p>
+              </div>
+            </div>
+            <div class="skill-badges-grid">
+              <span class="skill-item-badge"><i class="fas fa-robot"></i> n8n Automation</span>
+              <span class="skill-item-badge"><i class="fab fa-git-alt"></i> Git Version Control</span>
+              <span class="skill-item-badge"><i class="fab fa-github"></i> GitHub CI/CD &amp; Pages</span>
+              <span class="skill-item-badge"><i class="fas fa-code"></i> VS Code &amp; IntelliJ IDEA</span>
+              <span class="skill-item-badge"><i class="fas fa-bolt"></i> Vite Build Tooling</span>
+              <span class="skill-item-badge"><i class="fab fa-linux"></i> Linux &amp; Bash Basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         EDUCATION & EXPERIENCE SECTION
+         ==================================================================== -->
+    <section id="experience" class="experience section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Career Milestones</span>
+          <h2 class="section-title">Education &amp; Experience</h2>
+          <p class="section-subtitle">
+            A solid computer science academic foundation paired with verified industry attachments and client projects.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Timeline 1: University -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Completed 2025</span>
+              <h3 class="timeline-role">Bachelor of Science in Computer Science</h3>
+              <div class="timeline-org">Chuka University, Kenya</div>
+              <p class="timeline-desc">
+                Completed comprehensive coursework in software engineering, object-oriented programming, data structures and algorithms, database management systems, web development, and computer networking. Applied theoretical foundations to live software projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline 2: Caint Creation -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 &ndash; Present</span>
+              <h3 class="timeline-role">Founder &amp; Full-Stack Web Developer</h3>
+              <div class="timeline-org">Caint Creation &bull; Digital Solutions</div>
+              <p class="timeline-desc">
+                Architecting and delivering web applications, institutional websites, and workflow automations for retail businesses, educational centers, and digital agencies. Notable systems include QuickCart Studio (multi-tenant WhatsApp commerce), KaziLink platform, and Stainless Laundry Services management portal.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline 3: Weru Tea Factory Attachment -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">April 2023 &ndash; July 2023</span>
+              <h3 class="timeline-role">IT Operations &amp; Support Intern</h3>
+              <div class="timeline-org">Weru Tea Factory, Kenya</div>
+              <p class="timeline-desc">
+                Provided hands-on technical support across factory systems. Maintained database backups, performed local area network troubleshooting, assisted administrative users with software configurations, and resolved hardware/printer issues to maintain uninterrupted operational workflows.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline 4: Zillions Credit Company -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Verified Role</span>
+              <h3 class="timeline-role">Systems &amp; Operations Support</h3>
+              <div class="timeline-org">Zillions Credit Company</div>
+              <p class="timeline-desc">
+                Assisted with internal computer systems, database record reconciliation, client verification processing, and operational reporting in a fast-paced credit and financial environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FAQ SECTION
+         ==================================================================== -->
+    <section id="faq" class="faq section-padding" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Clear Answers</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Transparent expectations on how we work together, project timelines, and technical deliveries.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What types of websites and applications do you build?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                I build responsive business websites, educational and corporate portals, custom full-stack web applications (using PHP, Laravel, and MySQL), e-commerce storefronts, and automated workflow pipelines (n8n). Every project is tailored specifically to your business goals.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can you integrate M-Pesa payments into my website or application?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes! I have verified experience implementing Safaricom M-Pesa STK Push and automated B2C disbursement gateways through PayHero and Daraja APIs. Customers can enter their phone number on your site and receive an instant PIN prompt on their phone to complete transactions automatically.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does the development process work from start to finish?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                We begin with a brief discovery discussion to define your exact requirements, budget, and timeline. I then draft the UI architecture for your approval, engineer the clean frontend and backend code, test thoroughly across devices, and deploy to your hosting server with complete handover documentation.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you work with international clients outside Kenya?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Absolutely. I work remotely with clients across Kenya, Africa, and internationally. Communication is handled seamlessly via email, WhatsApp, Telegram, or video calls, with milestone tracking on GitHub or staging servers.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can you redesign or speed up an existing website?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes. If your current website is outdated, slow on mobile, or not generating inquiries, I can audit the codebase, redesign the user interface, optimize loading speeds, and rebuild it cleanly with modern web standards.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do I get an estimate and start working with you?</span>
+              <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Simply fill out the contact form below with your project details and target budget, or message me directly on WhatsApp at +254 714 772 901. I review all inquiries and respond within 24 hours with practical recommendations and cost estimates.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONTACT SECTION
+         ==================================================================== -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Let's Connect</span>
+          <h2 class="section-title">Start a Project or Consultation</h2>
+          <p class="section-subtitle">
+            Have a project in mind, an existing site to modernize, or an automation workflow to build? Let's discuss your requirements.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Card -->
+          <div class="contact-info-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Direct Communication Channels</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 16px;">
+              Feel free to reach out via your preferred channel. I respond to all professional inquiries promptly.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+              <div class="contact-item-text">
+                <strong>Primary Email</strong>
+                <a href="mailto:maduvwe88@gmail.com">maduvwe88@gmail.com</a>
+              </div>
             </div>
 
-            <div class="scroll-indicator">
-                <span class="scroll-text">Scroll</span>
-                <i class="fas fa-arrow-down"></i>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about section-padding">
-            <div class="container text-center">
-                <h2 class="section-title reveal-fade">About Me</h2>
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fab fa-whatsapp"></i></div>
+              <div class="contact-item-text">
+                <strong>Direct WhatsApp</strong>
+                <a href="https://wa.me/254714772901?text=Hello%20Emmanuel,%20I'd%20like%20to%20discuss%20a%20web%20development%20project%20with%20Caint%20Creation." target="_blank" rel="noopener noreferrer">+254 714 772 901 (Instant Chat)</a>
+              </div>
             </div>
 
-            <div class="container about-container">
-                <div class="about-text reveal-left">
-                    <h3 class="about-subtitle">Devoted Software Engineer and Web Developer.</h3>
-                    <p>I’m a Software Engineer and Web Developer focused on building scalable, modern,
-                        and user-centered digital experiences. I combine clean code with thoughtful design to create
-                        solutions
-                        that are both functional and engaging.</p>
-                    <p>With a background in Applied Computer Science and strong hands-on experience,
-                        I’m constantly learning and improving—driven by a passion for solving real problems
-                        and building technology that makes an impact.</p>
-
-                    <div class="about-buttons">
-                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                        <a href="#" class="btn btn-outline">Download Resume</a>
-                    </div>
-                </div>
-
-                <div class="about-cards reveal-right">
-                    <div class="card service-card">
-                        <div class="card-icon"><i class="fas fa-code"></i></div>
-                        <div class="card-content">
-                            <h4>Web Development</h4>
-                            <p>Creating responsive, dynamic websites and web applications, with the use of modern
-                                frameworks.</p>
-                        </div>
-                    </div>
-
-                    <div class="card service-card">
-                        <div class="card-icon"><i class="far fa-user"></i></div>
-                        <div class="card-content">
-                            <h4>Software Engineering</h4>
-                            <p>Designing and implementing software solutions, focusing on scalability and performance.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card service-card">
-                        <div class="card-icon"><i class="fas fa-suitcase"></i></div>
-                        <div class="card-content">
-                            <h4>Project Management</h4>
-                            <p>Leading tasks from inception to completion, applying Agile methodologies.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects section-padding">
-            <div class="container text-center">
-                <h2 class="section-title reveal-fade">My Projects</h2>
-                <p class="section-subtitle reveal-fade" style="margin-bottom: 40px; color: var(--text-secondary);">Here
-                    are some of the recent projects I've worked on.</p>
-            </div>
-            <div class="container">
-                <div class="projects-grid reveal-up">
-                    <!-- Linah Academy Project -->
-                    <div class="project-card">
-                        <div class="project-image"><i class="fas fa-school" style="font-size: 3rem;"></i></div>
-                        <div class="project-info">
-                            <h3>Linah Academy</h3>
-                            <p>An elegant, fully responsive landing page for an early childhood education center,
-                                featuring dynamic program descriptions and admissions details. Built to enhance
-                                community outreach and streamline enrollment paths.</p>
-                            <div class="project-tags">
-                                <span>HTML/CSS</span><span>JavaScript</span><span>Education</span>
-                            </div>
-                            <a href="https://caintcreation.github.io/linahschool/" target="_blank"
-                                class="btn btn-outline"
-                                style="margin-top: 15px; font-size: 0.9rem; padding: 8px 15px;">View Live Site</a>
-                        </div>
-                    </div>
-
-                    <!-- E-Commerce Platform -->
-                    <div class="project-card">
-                        <div class="project-image"><i class="fas fa-laptop-code" style="font-size: 3rem;"></i></div>
-                        <div class="project-info">
-                            <h3>E-Commerce Platform</h3>
-                            <p>A full-stack e-commerce solution with dynamic product routing, cart authentication, and
-                                scalable checkout procedures.
-                            </p>
-                            <div class="project-tags">
-                                <span>React</span><span>PHP</span><span>MySQL</span>
-                            </div>
-                            <a href="#" class="btn btn-outline"
-                                style="margin-top: 15px; font-size: 0.9rem; padding: 8px 15px;">View Live Site</a>
-                        </div>
-                    </div>
-
-                    <!-- Data Analytics Dashboard -->
-                    <div class="project-card">
-                        <div class="project-image"><i class="fas fa-chart-line" style="font-size: 3rem;"></i></div>
-                        <div class="project-info">
-                            <h3>Data Analytics Dashboard</h3>
-                            <p>Visualize complex data flows elegantly with dark-mode enabled interactive charts and
-                                robust backend data processing.</p>
-                            <div class="project-tags">
-                                <span>Python</span><span>D3.js</span><span>SQL</span>
-                            </div>
-                            <a href="#" class="btn btn-outline"
-                                style="margin-top: 15px; font-size: 0.9rem; padding: 8px 15px;">View Live Site</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills section-padding">
-            <div class="container text-center">
-                <h2 class="section-title reveal-fade">My Skills</h2>
-
-                <div class="filter-chips reveal-fade" id="skills-filter">
-                    <button class="chip active" data-filter="all">All</button>
-                    <button class="chip" data-filter="frontend">Frontend</button>
-                    <button class="chip" data-filter="backend">Backend</button>
-                    <button class="chip" data-filter="mobile">Mobile</button>
-                    <button class="chip" data-filter="tools">Tools</button>
-                    <button class="chip" data-filter="methodologies">Methodologies</button>
-                </div>
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-item-text">
+                <strong>Telephone</strong>
+                <a href="tel:+254714772901">+254 714 772 901</a>
+              </div>
             </div>
 
-            <div class="container skills-grid reveal-up" id="skills-grid">
-                <!-- Frontend -->
-                <div class="skill-card frontend">
-                    <div class="skill-info"><span class="skill-name">HTML/CSS</span><span
-                            class="skill-percentage">95%</span></div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-card frontend">
-                    <div class="skill-info"><span class="skill-name">JavaScript</span><span
-                            class="skill-percentage">90%</span></div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 90%"></div>
-                    </div>
-                </div>
-                <!-- Backend -->
-                <div class="skill-card backend">
-                    <div class="skill-info"><span class="skill-name">Java</span><span
-                            class="skill-percentage">85%</span></div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card backend">
-                    <div class="skill-info"><span class="skill-name">PHP</span><span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card backend">
-                    <div class="skill-info"><span class="skill-name">Python</span><span
-                            class="skill-percentage">85%</span></div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card backend">
-                    <div class="skill-info"><span class="skill-name">C++</span><span class="skill-percentage">75%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card backend">
-                    <div class="skill-info"><span class="skill-name">C</span><span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 70%"></div>
-                    </div>
-                </div>
-                <!-- Mobile -->
-                <div class="skill-card mobile">
-                    <div class="skill-info"><span class="skill-name">React Native</span><span
-                            class="skill-percentage">75%</span></div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%"></div>
-                    </div>
-                </div>
-                <!-- Tools -->
-                <div class="skill-card tools">
-                    <div class="skill-info"><span class="skill-name">Git/GitHub</span><span
-                            class="skill-percentage">90%</span></div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 90%"></div>
-                    </div>
-                </div>
-                <!-- Methodologies -->
-                <div class="skill-card methodologies">
-                    <div class="skill-info"><span class="skill-name">Agile/Scrum</span><span
-                            class="skill-percentage">85%</span></div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-padding">
-            <div class="container text-center">
-                <h2 class="section-title reveal-fade">Get In <span class="highlight">Touch</span></h2>
-                <p class="contact-subtitle reveal-fade" style="margin-bottom: 40px; color: var(--text-secondary);">Have
-                    a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new
-                    opportunities.</p>
+            <div class="contact-item">
+              <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-item-text">
+                <strong>Location</strong>
+                <span>Chuka, Tharaka Nithi County, Kenya</span>
+              </div>
             </div>
 
-            <div class="container contact-container">
-                <div class="contact-info reveal-left">
-                    <h3 class="info-title">Contact Information</h3>
-
-                    <div class="info-item">
-                        <div class="icon-circle"><i class="far fa-envelope"></i></div>
-                        <div class="info-text"><a href="mailto:maduvwe88@gmail.com" style="color: inherit; text-decoration: none;">maduvwe88@gmail.com</a></div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
-                        <div class="info-text"><a href="tel:+254714772901" style="color: inherit; text-decoration: none;">+254 714 772 901</a></div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
-                        <div class="info-text"><a href="https://wa.me/254714772901" target="_blank" style="color: inherit; text-decoration: none;">WhatsApp Me</a></div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="info-text">Chuka, Tharaka Nithi County, Kenya</div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/176BmpmFYo/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://github.com/caintcreation" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://t.me/Caintmanu11" target="_blank" class="social-icon" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                        <a href="https://www.instagram.com/c_aintcreation?igsh=MXAwOG96dG1wNDRlOA==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/254714772901" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper reveal-right">
-                    <form class="contact-form" action="https://formsubmit.co/maduvwe88@gmail.com" method="POST">
-                        <h3 class="form-title text-center">Send a message</h3>
-
-                        <input type="hidden" name="_subject" value="New Submission from Portfolio Form">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="text" name="_honey" style="display:none">
-
-                        <div class="form-group">
-                            <label for="name">Your name:</label>
-                            <input type="text" id="name" name="name" placeholder="Name..." required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Email..." required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Your message:</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Hello, I'd like to talk about..."
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
-                    </form>
-                </div>
+            <div class="contact-socials-block">
+              <h4>Verified Social &amp; Code Profiles</h4>
+              <div class="social-icons-row">
+                <a href="https://github.com/caintcreation" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/254714772901" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/Caintmanu11" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Telegram Profile" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://www.instagram.com/c_aintcreation?igsh=MXAwOG96dG1wNDRlOA==" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/176BmpmFYo/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              </div>
             </div>
-        </section>
-    </main>
+          </div>
 
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+          <!-- Project Inquiry Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Send a Detailed Project Inquiry</h3>
+            <form id="portfolio-contact-form" action="https://formsubmit.co/maduvwe88@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New Caint Creation Client Project Inquiry">
+              <input type="hidden" name="_template" value="table">
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Full Name *</label>
+                  <input type="text" id="name" name="name" placeholder="e.g. Kelvin Mwangi" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="e.g. kelvin@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Required Service *</label>
+                  <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service...</option>
+                    <option value="Website Development">New Website Development</option>
+                    <option value="Web Application">Custom Web Application / System</option>
+                    <option value="Payment Integration">M-Pesa / Payment Gateway Integration</option>
+                    <option value="Website Redesign">Website Redesign &amp; Optimization</option>
+                    <option value="Workflow Automation">n8n Workflow Automation</option>
+                    <option value="Digital Branding">Digital Branding &amp; Graphics</option>
+                    <option value="Other">Other Digital Solution</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget">Target Budget (Optional)</label>
+                  <select id="budget" name="budget">
+                    <option value="" selected>Select budget range...</option>
+                    <option value="Under KES 25,000 / $200">Under KES 25,000 ($200)</option>
+                    <option value="KES 25,000 - 60,000 / $200 - $500">KES 25,000 &ndash; 60,000 ($200 &ndash; $500)</option>
+                    <option value="KES 60,000 - 150,000 / $500 - $1,200">KES 60,000 &ndash; 150,000 ($500 &ndash; $1,200)</option>
+                    <option value="KES 150,000+ / $1,200+">KES 150,000+ ($1,200+)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Description &amp; Objectives *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, target audience, timeline, or any specific features you need..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Send Project Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       INTERACTIVE PROJECT PREVIEW MODAL (LIVE VIEW + SCREENSHOTS + SPECS)
+       ==================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-primary" id="modal-badge">Project Status</span>
+          <h3 id="modal-title" style="margin-top: 6px; font-size: 1.4rem;">Project Title</h3>
+        </div>
+
+        <!-- Mode Switcher Tabs -->
+        <div class="modal-mode-tabs">
+          <button class="modal-tab-btn active" id="modal-tab-live">
+            <i class="fas fa-laptop"></i> Interactive Live View
+          </button>
+          <button class="modal-tab-btn" id="modal-tab-screenshots">
+            <i class="fas fa-images"></i> Screenshots
+          </button>
+          <button class="modal-tab-btn" id="modal-tab-details">
+            <i class="fas fa-info-circle"></i> Specs &amp; Features
+          </button>
+        </div>
+
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- TAB 1: LIVE INTERACTIVE VIEW STAGE -->
+        <div id="modal-live-stage">
+          <div class="viewport-switch-bar">
+            <div class="viewport-buttons">
+              <button class="device-btn active" data-device="desktop"><i class="fas fa-desktop"></i> Desktop</button>
+              <button class="device-btn" data-device="tablet"><i class="fas fa-tablet-alt"></i> Tablet</button>
+              <button class="device-btn" data-device="mobile"><i class="fas fa-mobile-alt"></i> Mobile</button>
+            </div>
+            <div class="browser-url-pill" id="modal-url-pill">
+              🔒 https://caintcreation.dev
+            </div>
+          </div>
+
+          <div class="modal-frame-stage">
+            <iframe id="modal-live-iframe" class="modal-live-iframe" title="Interactive Project Preview" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+            
+            <!-- Fallback Card for websites with iframe restrictions -->
+            <div id="modal-iframe-fallback" style="display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 48px 24px; width: 100%; height: 100%;">
+              <div style="width: 70px; height: 70px; border-radius: 50%; background: var(--accent-glow); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 20px;">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 12px; color: #ffffff;">Live Production Platform</h3>
+              <p style="color: var(--text-secondary); max-width: 520px; line-height: 1.6; margin-bottom: 24px;">
+                This web platform runs with strict browser security policies. You can open and test the full live application directly in a dedicated tab.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer" id="modal-fallback-link" class="btn btn-primary btn-lg">
+                <i class="fas fa-bolt"></i> Launch Fullscreen Live Web App
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: SCREENSHOT SHOWCASE STAGE -->
+        <div id="modal-screen-stage" style="display: none;">
+          <div class="modal-frame-stage" style="min-height: auto; aspect-ratio: 16 / 10;">
+            <img src="assets/projects/reviewpulse-ai.png" alt="Project preview" id="modal-main-img" class="modal-main-img">
+          </div>
+          <div class="modal-gallery-thumbs" id="modal-gallery-thumbs"></div>
+        </div>
+
+        <!-- TAB 3: SPECIFICATIONS & FEATURES STAGE -->
+        <div id="modal-details-stage" style="display: none;">
+          <div class="modal-section-block">
+            <h4><i class="fas fa-info-circle highlight"></i> Project Overview</h4>
+            <p id="modal-overview" style="color: var(--text-secondary); line-height: 1.7;"></p>
+          </div>
+
+          <div class="modal-section-block">
+            <h4><i class="fas fa-exclamation-triangle highlight"></i> The Problem Addressed</h4>
+            <p id="modal-problem" style="color: var(--text-secondary); line-height: 1.7;"></p>
+          </div>
+
+          <div class="modal-section-block">
+            <h4><i class="fas fa-cogs highlight"></i> Technical Solution &amp; Architecture</h4>
+            <p id="modal-solution" style="color: var(--text-secondary); line-height: 1.7;"></p>
+          </div>
+
+          <div class="modal-section-block">
+            <h4><i class="fas fa-star highlight"></i> Key Features</h4>
+            <ul class="modal-features-list" id="modal-features"></ul>
+          </div>
+
+          <div class="modal-section-block">
+            <h4><i class="fas fa-layer-group highlight"></i> Technologies &amp; Tools Used</h4>
+            <div class="project-tech-tags" id="modal-tech-tags"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="modal-github-link">
+          <i class="fab fa-github"></i> View Source Code
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-live-link">
+          <i class="fas fa-external-link-alt"></i> Open Fullscreen Live App
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       PROFESSIONAL FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="margin-bottom: 12px; display: inline-flex;">
+            <img src="LOGO.png" alt="Caint Creation Logo" class="brand-logo-img">
+          </a>
+          <p>
+            Building high-impact digital experiences that move businesses forward. Specializing in modern web applications, e-commerce systems, and workflow automations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+            <li><a href="services.html">Services Offered</a></li>
+            <li><a href="about.html">About Developer</a></li>
+            <li><a href="cv.html">Curriculum Vitae</a></li>
+            <li><a href="Emmanuel_Maduvwe_Professional_CV.pdf" download="Emmanuel_Maduvwe_Professional_CV.pdf"><i class="fas fa-file-pdf highlight"></i> Download CV (PDF)</a></li>
+            <li><a href="contact.html">Contact &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specialized Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#websites">Business Websites</a></li>
+            <li><a href="services.html#webapps">Web Application Portals</a></li>
+            <li><a href="services.html#payments">M-Pesa API Integration</a></li>
+            <li><a href="services.html#automation">n8n Workflow Automation</a></li>
+            <li><a href="services.html#redesign">Website Speed Redesign</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Connect</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:maduvwe88@gmail.com"><i class="fas fa-envelope highlight"></i> maduvwe88@gmail.com</a></li>
+            <li><a href="https://wa.me/254714772901" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp highlight"></i> +254 714 772 901</a></li>
+            <li><a href="https://github.com/caintcreation" target="_blank" rel="noopener noreferrer"><i class="fab fa-github highlight"></i> github.com/caintcreation</a></li>
+            <li><a href="https://t.me/Caintmanu11" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram-plane highlight"></i> @Caintmanu11</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>Caint Creation</strong>. Official portfolio of Emmanuel Maduvwe. All rights reserved.
+        </div>
+        <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+          Back to Top <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="projects-data.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>

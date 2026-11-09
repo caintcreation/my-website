@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae | Emmanuel Maduvwe - Caint Creation</title>
+  <meta name="description" content="Official Curriculum Vitae of Emmanuel Maduvwe - Software Engineer, Full-Stack Web Developer, and Founder of Caint Creation. BSc Computer Science (Chuka University 2025).">
+  <link rel="canonical" href="https://caintcreation.dev/cv.html">
+
+  <link rel="icon" type="image/png" href="LOGO.png">
+  <link rel="apple-touch-icon" href="LOGO.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .cv-paper {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 56px 64px;
+      max-width: 960px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-normal);
+    }
+    .cv-header-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cv-name {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 4px;
+    }
+    .cv-title {
+      font-size: 1.15rem;
+      color: var(--accent-primary);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .cv-contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .cv-contact-list a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .cv-contact-list a:hover {
+      color: var(--accent-primary);
+    }
+    .cv-section {
+      margin-bottom: 36px;
+    }
+    .cv-section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .cv-entry {
+      margin-bottom: 24px;
+    }
+    .cv-entry:last-child {
+      margin-bottom: 0;
+    }
+    .cv-entry-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .cv-entry-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .cv-entry-org {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .cv-entry-date {
+      font-size: 0.85rem;
+      font-family: var(--font-mono);
+      color: var(--accent-primary);
+      font-weight: 600;
+    }
+    .cv-entry-desc {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+    .cv-bullets {
+      margin-top: 8px;
+      padding-left: 20px;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+    .cv-bullets li {
+      margin-bottom: 6px;
+    }
+    .cv-skill-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    .cv-skill-table td {
+      padding: 10px 14px 10px 0;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .cv-skill-table tr:last-child td {
+      border-bottom: none;
+    }
+    .cv-skill-table td:first-child {
+      font-weight: 700;
+      color: var(--text-primary);
+      width: 220px;
+    }
+    .cv-skill-table td:last-child {
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .cv-view-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 24px 0 32px;
+    }
+    .cv-toggle-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+    }
+    .cv-toggle-btn.active, .cv-toggle-btn:hover {
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-cyan));
+      color: #ffffff;
+      border-color: transparent;
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+
+    #pdf-embed-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      box-shadow: var(--shadow-md);
+      display: none;
+    }
+    #pdf-embed-frame {
+      width: 100%;
+      height: 850px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      background: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .cv-paper {
+        padding: 32px 24px;
+      }
+      .cv-name {
+        font-size: 1.8rem;
+      }
+      .cv-skill-table td:first-child {
+        width: 140px;
+      }
+      #pdf-embed-frame {
+        height: 600px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .cv-paper {
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        color: #000000 !important;
+      }
+      .cv-section-title {
+        color: #000000 !important;
+        border-bottom-color: #cccccc !important;
+      }
+      .cv-entry-title, .cv-name {
+        color: #000000 !important;
+      }
+      .cv-entry-desc, .cv-bullets, .cv-skill-table td {
+        color: #333333 !important;
+      }
+      .cv-entry-date, .cv-title {
+        color: #000000 !important;
+      }
+      .no-print, header, footer, .cv-view-toggle, #pdf-embed-wrapper {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Caint Creation Homepage">
+          <img src="LOGO.png" alt="Caint Creation Logo" class="brand-logo-img">
+          <div class="logo-text-group">
+            <span class="brand-name">Caint Creation</span>
+            <span class="logo-sub">Build &bull; Innovate &bull; Grow</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="cv.html" class="nav-link active">Curriculum Vitae</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+          </button>
+          <a href="Emmanuel_Maduvwe_Professional_CV.pdf" download="Emmanuel_Maduvwe_Professional_CV.pdf" class="btn btn-primary btn-sm desktop-only">
+            <i class="fas fa-file-pdf"></i> Download PDF
+          </a>
+          <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header (hidden in print) -->
+    <section class="page-header no-print">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <span>Curriculum Vitae</span>
+        </div>
+        <h1 class="page-title">Curriculum Vitae</h1>
+        <p class="page-desc" style="margin-bottom: 24px;">
+          Verified academic credentials, professional engineering history, production software systems, and technical capabilities.
+        </p>
+
+        <div class="hero-cta-group" style="justify-content: center; gap: 12px; margin-top: 12px;">
+          <a href="Emmanuel_Maduvwe_Professional_CV.pdf" download="Emmanuel_Maduvwe_Professional_CV.pdf" class="btn btn-primary">
+            <i class="fas fa-file-pdf"></i> Download Official PDF
+          </a>
+          <a href="Emmanuel_Maduvwe_Professional_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fas fa-external-link-alt"></i> Open PDF in Tab
+          </a>
+          <button onclick="window.print()" class="btn btn-secondary">
+            <i class="fas fa-print"></i> Print Clean Copy
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- View Mode Switcher -->
+    <div class="container no-print">
+      <div class="cv-view-toggle">
+        <button type="button" class="cv-toggle-btn active" id="btn-show-web-cv">
+          <i class="fas fa-file-lines"></i> Interactive Web CV
+        </button>
+        <button type="button" class="cv-toggle-btn" id="btn-show-pdf-cv">
+          <i class="fas fa-file-pdf"></i> Original PDF Document
+        </button>
+      </div>
+    </div>
+
+    <!-- Embedded PDF Container (hidden by default) -->
+    <div class="container no-print" id="pdf-embed-wrapper">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; padding: 4px 8px;">
+        <span style="font-size:0.9rem; font-weight:600; color:var(--text-secondary);">
+          <i class="fas fa-file-pdf highlight"></i> Emmanuel_Maduvwe_Professional_CV.pdf
+        </span>
+        <a href="Emmanuel_Maduvwe_Professional_CV.pdf" download="Emmanuel_Maduvwe_Professional_CV.pdf" class="btn btn-primary btn-sm">
+          <i class="fas fa-download"></i> Save Document
+        </a>
+      </div>
+      <iframe id="pdf-embed-frame" src="Emmanuel_Maduvwe_Professional_CV.pdf#toolbar=1&navpanes=0" title="Emmanuel Maduvwe Professional Curriculum Vitae"></iframe>
+    </div>
+
+    <!-- Main CV Paper -->
+    <section class="section-padding" id="web-cv-wrapper" style="padding-top: 16px;">
+      <div class="container">
+        <article class="cv-paper cv-document">
+          <!-- CV Header -->
+          <header class="cv-header-block">
+            <div>
+              <h1 class="cv-name">Emmanuel Maduvwe</h1>
+              <div class="cv-title">Software Engineer &bull; Full-Stack Web Developer</div>
+              <p style="color: var(--text-secondary); max-width: 520px; font-size: 0.95rem; line-height: 1.6;">
+                Founder of <strong>Caint Creation</strong>. Computer Science graduate specializing in modern web applications, e-commerce architectures, fintech payment integrations (PayHero M-Pesa), and automated business pipelines.
+              </p>
+            </div>
+
+            <ul class="cv-contact-list">
+              <li><i class="fas fa-envelope highlight"></i> <a href="mailto:maduvwe88@gmail.com">maduvwe88@gmail.com</a></li>
+              <li><i class="fas fa-phone highlight"></i> <a href="tel:+254714772901">+254 714 772 901</a></li>
+              <li><i class="fab fa-whatsapp highlight"></i> <a href="https://wa.me/254714772901" target="_blank" rel="noopener noreferrer">+254 714 772 901</a></li>
+              <li><i class="fas fa-globe highlight"></i> <a href="https://caintcreation.dev/">https://caintcreation.dev/</a></li>
+              <li><i class="fab fa-github highlight"></i> <a href="https://github.com/caintcreation" target="_blank" rel="noopener noreferrer">github.com/caintcreation</a></li>
+              <li><i class="fas fa-map-marker-alt highlight"></i> Chuka, Tharaka Nithi, Kenya</li>
+            </ul>
+          </header>
+
+          <!-- Education -->
+          <section class="cv-section">
+            <h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <div>
+                  <div class="cv-entry-title">Bachelor of Science in Computer Science</div>
+                  <div class="cv-entry-org">Chuka University, Kenya</div>
+                </div>
+                <div class="cv-entry-date">Completed 2025</div>
+              </div>
+              <div class="cv-entry-desc">
+                Core Focus Areas: Software Engineering, Database Systems (MySQL), Data Structures &amp; Algorithms, Object-Oriented Programming (Java, C++), Web Technologies, and Computer Networking.
+              </div>
+            </div>
+          </section>
+
+          <!-- Professional Experience -->
+          <section class="cv-section">
+            <h2 class="cv-section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
+            
+            <!-- Role 1 -->
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <div>
+                  <div class="cv-entry-title">Founder &amp; Lead Web Developer</div>
+                  <div class="cv-entry-org">Caint Creation &bull; Digital Solutions</div>
+                </div>
+                <div class="cv-entry-date">2023 &ndash; Present</div>
+              </div>
+              <ul class="cv-bullets">
+                <li>Architected, developed, and deployed full-stack web applications for commercial clients and retail merchants.</li>
+                <li>Created <strong>QuickCart Studio</strong>, a multi-tenant e-commerce platform with automated WhatsApp order delivery and real-time inventory management.</li>
+                <li>Engineered <strong>KaziLink</strong>, a Kenyan micro-task platform integrating PayHero's automated M-Pesa STK push and B2C disbursement gateway.</li>
+                <li>Built the <strong>Stainless Laundry Services</strong> commercial portal with real-time order tracking (track-order.php) and dynamic weight-based pricing estimation.</li>
+                <li>Automated business data ingestion and environmental metric pipelines utilizing self-hosted <strong>n8n</strong> workflows and REST APIs.</li>
+              </ul>
+            </div>
+
+            <!-- Role 2 -->
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <div>
+                  <div class="cv-entry-title">IT Operations &amp; Support Intern</div>
+                  <div class="cv-entry-org">Weru Tea Factory, Kenya</div>
+                </div>
+                <div class="cv-entry-date">April 2023 &ndash; July 2023</div>
+              </div>
+              <ul class="cv-bullets">
+                <li>Assisted the IT department with operational maintenance across factory administration workstations and servers.</li>
+                <li>Performed routine database backups, hardware troubleshooting, and printer network mapping.</li>
+                <li>Maintained local area network (LAN) switches and access points to ensure continuous operational connectivity.</li>
+                <li>Supported administrative staff with ERP software configurations and system troubleshooting.</li>
+              </ul>
+            </div>
+
+            <!-- Role 3 -->
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <div>
+                  <div class="cv-entry-title">Systems &amp; Operations Support</div>
+                  <div class="cv-entry-org">Zillions Credit Company</div>
+                </div>
+                <div class="cv-entry-date">Verified Role</div>
+              </div>
+              <ul class="cv-bullets">
+                <li>Supported internal computer operations, client record validation, and administrative ledger reconciliation in a credit management environment.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Core Projects -->
+          <section class="cv-section">
+            <h2 class="cv-section-title"><i class="fas fa-folder-open"></i> Selected Engineering Projects</h2>
+            
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <div>
+                  <div class="cv-entry-title">ReviewPulse AI (Laravel, Blade, Vite, Tailwind, REST API)</div>
+                </div>
+                <div class="cv-entry-date"><a href="https://github.com/caintcreation/reviewpulse-ai" target="_blank" rel="noopener noreferrer">github.com/caintcreation/reviewpulse-ai</a></div>
+              </div>
+              <div class="cv-entry-desc">
+                Autonomous customer review intelligence platform. Automatically ingests reviews via API, classifies sentiment, drafts contextual AI replies, and provides an operator approval interface.
+              </div>
+            </div>
+
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <div>
+                  <div class="cv-entry-title">QuickCart Studio (PHP, MySQL, WhatsApp API, JavaScript)</div>
+                </div>
+                <div class="cv-entry-date"><a href="https://github.com/caintcreation/quick_cart" target="_blank" rel="noopener noreferrer">github.com/caintcreation/quick_cart</a></div>
+              </div>
+              <div class="cv-entry-desc">
+                Multi-tenant WhatsApp shopping platform enabling retail merchants to showcase catalogues and receive automated WhatsApp orders with real-time inventory management.
+              </div>
+            </div>
+
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <div>
+                  <div class="cv-entry-title">KaziLink Platform (PHP, MySQL, PayHero M-Pesa API, Webhooks)</div>
+                </div>
+                <div class="cv-entry-date"><a href="https://github.com/caintcreation/kazi-links" target="_blank" rel="noopener noreferrer">github.com/caintcreation/kazi-links</a></div>
+              </div>
+              <div class="cv-entry-desc">
+                Online task platform with user authentication, level progressions, wallet ledger, and automated Kenyan M-Pesa withdrawals via PayHero. Live at kazilinks.kesug.com.
+              </div>
+            </div>
+
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <div>
+                  <div class="cv-entry-title">School Management System (Java, Maven, IntelliJ IDEA, JDBC)</div>
+                </div>
+                <div class="cv-entry-date"><a href="https://github.com/caintcreation/school-management-system" target="_blank" rel="noopener noreferrer">github.com/caintcreation/school-management-system</a></div>
+              </div>
+              <div class="cv-entry-desc">
+                Object-Oriented desktop management software automating student enrollment, instructor assignment, course schedules, and academic reports.
+              </div>
+            </div>
+          </section>
+
+          <!-- Technical Capabilities -->
+          <section class="cv-section">
+            <h2 class="cv-section-title"><i class="fas fa-tools"></i> Technical Capabilities</h2>
+            <table class="cv-skill-table">
+              <tr>
+                <td>Frontend Development:</td>
+                <td>HTML5 (Semantic), CSS3 (Flexbox/Grid), JavaScript (ES6+), Responsive UI, Tailwind CSS, Media Optimization.</td>
+              </tr>
+              <tr>
+                <td>Backend &amp; Databases:</td>
+                <td>PHP (Vanilla &amp; OOP), Laravel Framework, MySQL Database Architecture, SQLite, RESTful API Engineering.</td>
+              </tr>
+              <tr>
+                <td>Programming Languages:</td>
+                <td>Java, Python, C, C++, JavaScript, PHP.</td>
+              </tr>
+              <tr>
+                <td>Fintech &amp; APIs:</td>
+                <td>PayHero Kenya M-Pesa API (STK Push, B2C Withdrawals), Webhooks, REST Ingestion Endpoints.</td>
+              </tr>
+              <tr>
+                <td>Automation &amp; DevOps:</td>
+                <td>n8n Workflow Automation, Git, GitHub Pages &amp; Actions, VS Code, IntelliJ IDEA, Vite, Linux CLI.</td>
+              </tr>
+            </table>
+          </section>
+
+          <!-- References -->
+          <section class="cv-section" style="margin-bottom: 0;">
+            <h2 class="cv-section-title"><i class="fas fa-check-circle"></i> References &amp; Verification</h2>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.65;">
+              Academic credentials from Chuka University, internship records from Weru Tea Factory, and live source code repositories on GitHub are available upon request for formal verification.
+            </p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (hidden in print) -->
+  <footer class="footer no-print">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="margin-bottom: 12px; display: inline-flex;">
+            <img src="LOGO.png" alt="Caint Creation Logo" class="brand-logo-img">
+          </a>
+          <p>
+            Building high-impact digital experiences that move businesses forward. Full-stack development, e-commerce systems, and workflow automation.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+            <li><a href="services.html">Services Offered</a></li>
+            <li><a href="about.html">About Developer</a></li>
+            <li><a href="cv.html">Curriculum Vitae</a></li>
+            <li><a href="Emmanuel_Maduvwe_Professional_CV.pdf" download="Emmanuel_Maduvwe_Professional_CV.pdf"><i class="fas fa-file-pdf highlight"></i> Download CV (PDF)</a></li>
+            <li><a href="contact.html">Contact &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specialized Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#websites">Business Websites</a></li>
+            <li><a href="services.html#webapps">Web Application Portals</a></li>
+            <li><a href="services.html#payments">M-Pesa API Integration</a></li>
+            <li><a href="services.html#automation">n8n Workflow Automation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Connect</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:maduvwe88@gmail.com"><i class="fas fa-envelope highlight"></i> maduvwe88@gmail.com</a></li>
+            <li><a href="https://wa.me/254714772901" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp highlight"></i> +254 714 772 901</a></li>
+            <li><a href="https://github.com/caintcreation" target="_blank" rel="noopener noreferrer"><i class="fab fa-github highlight"></i> github.com/caintcreation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>Caint Creation</strong>. Crafted by Emmanuel Maduvwe.
+        </div>
+        <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+          Back to Top <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Wire up CV Toggle buttons
+    const btnWeb = document.getElementById('btn-show-web-cv');
+    const btnPdf = document.getElementById('btn-show-pdf-cv');
+    const webWrapper = document.getElementById('web-cv-wrapper');
+    const pdfWrapper = document.getElementById('pdf-embed-wrapper');
+
+    if (btnWeb && btnPdf && webWrapper && pdfWrapper) {
+      btnWeb.addEventListener('click', () => {
+        btnWeb.classList.add('active');
+        btnPdf.classList.remove('active');
+        webWrapper.style.display = 'block';
+        pdfWrapper.style.display = 'none';
+      });
+      btnPdf.addEventListener('click', () => {
+        btnPdf.classList.add('active');
+        btnWeb.classList.remove('active');
+        webWrapper.style.display = 'none';
+        pdfWrapper.style.display = 'block';
+      });
+    }
+  </script>
+</body>
+</html>
