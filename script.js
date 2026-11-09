@@ -155,6 +155,18 @@ function initNavigation() {
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', closeMenu);
     });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 992 && navLinks.classList.contains('active')) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+        closeMenu();
+      }
+    });
   }
 
   // Active section scroll spy

@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=2.1">
+  <link rel="stylesheet" href="style.css?v=2.2">
 
   <style>
     .cv-paper {
@@ -195,16 +195,28 @@
 
     @media (max-width: 768px) {
       .cv-paper {
-        padding: 32px 24px;
+        padding: 24px 16px;
+      }
+      .cv-header-block {
+        flex-direction: column;
+        gap: 16px;
       }
       .cv-name {
         font-size: 1.8rem;
       }
       .cv-skill-table td:first-child {
-        width: 140px;
+        width: 120px;
+      }
+      .cv-view-toggle {
+        flex-direction: column;
+        width: 100%;
+      }
+      .cv-toggle-btn {
+        width: 100%;
+        justify-content: center;
       }
       #pdf-embed-frame {
-        height: 600px;
+        height: 500px;
       }
     }
 
@@ -579,7 +591,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=2.1"></script>
+  <script src="script.js?v=2.2"></script>
   <script>
     // Wire up CV Toggle buttons
     const btnWeb = document.getElementById('btn-show-web-cv');
